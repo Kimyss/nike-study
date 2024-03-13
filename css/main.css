@@ -1,0 +1,44 @@
+a{
+  text-decoration: none;
+}
+
+header{
+  background-color: #41c052;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  /* z-index: 2; */
+  
+}
+header img{
+  width: 58px;
+  height: 21px;
+  padding: 20px;
+}
+.inner{
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+.head-inner{
+  display: flex;
+  justify-content: space-between;
+}
+.sub-menu{
+  display: flex;
+  padding: 10px;
+}
+.sub-menu li{
+  margin-right: 4px;
+}
+.sub-menu li::before{
+  content:"";
+  display: block;
+  width: 1;
+  height: 12px;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
