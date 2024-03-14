@@ -1,35 +1,66 @@
 
+/* html{
+  width: ;
+} */
 a{
   text-decoration: none;
   color: black;
 }
 
+.inner{
+  width: 1844px;
+}
+img {
+  /* 이미지가 인라인 요소라서 발생하는 문자 기준선(Baseline) 아래의 공간을 제거하기 위해 */
+  display: block;
+}
+
+.btn{
+  padding: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  
+}
+
 
 header{
-  background-color: brown;
+  /* background-color: brown; */
+  background-color: white;
   max-width: 100%;
   position: relative;
-  padding: 0 38px 0 36px;
+  /* padding: 0 38px 0 36px; */
 }
 
 .nav-1{
-  background-color: beige;
+  background-color: #f5f5f5;;
   display: flex;
   justify-content: space-between;
-  background: #f5f5f5;
   height: 36px;
   width: 100%;
-  line-height: 36px;
 }
 
+.nav-1 div a{
+  display: flex;
+
+
+}
 .nav-1 img{
   width: 24px;
   height: 24px;
+  padding:0 0 0 36px;
 }
 
 .side-menu .side{
   display: flex;
   position: relative;
+  padding:0 38px 0 0;
 }
 .side-menu .side li {
   display: block;
@@ -58,14 +89,70 @@ header{
 .nav-2 img{
   width: 58px;
   height: 20px;
+  padding:0 0 0 10px;
 }
 
 .nav-2{
   display: flex;
   justify-content: space-between;
+  height: 60px;
 }
 
-.nav-2 .main-menu .main {
+.nav-2 .logo{
+ padding: 20px;
+}
+
+
+.nav-2 .main-menu{
   display: flex;
+  line-height: 60px;
 }
 
+.nav-2 .main-menu a{
+  padding: 12px 12px 8px;
+}
+
+.side-search{
+  position: relative;
+  padding: 0 38px 0 0px;
+}
+
+/* 돋보기 위치조정 
+  검색창줄이기, 색상
+  */
+
+.side-search input{
+  position: absolute;
+  width: 150px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  border: none;
+  background-color: #f5f5f5;
+  right: 38px;
+}
+
+
+header .side-search:first-child{
+ position: absolute;
+}
+
+
+
+.welcome-coupon{
+  background-color: #f5f5f5;
+  height: 44px;
+  text-align: center;  
+}
+
+.section-1{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.section-1 .airmax-dn a img{
+  /* position: absolute; */
+    margin: 0 auto;
+   
+ }
