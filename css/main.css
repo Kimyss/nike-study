@@ -1,15 +1,21 @@
 
-/* html{
-  width: ;
-} */
 a{
   text-decoration: none;
   color: black;
 }
 
-.inner{
-  width: 1844px;
+/* 전역변수 설정 */
+body{
+  font-family: "Noto Sans KR", sans-serif;
+  overflow-x: hidden;
+  /* line-height: ; */
 }
+
+.inner{
+  width: 1200px; /* max-width, width기준(?)*/ 
+  margin: 0 auto;
+}
+
 img {
   /* 이미지가 인라인 요소라서 발생하는 문자 기준선(Baseline) 아래의 공간을 제거하기 위해 */
   display: block;
@@ -26,7 +32,6 @@ img {
   border: none;
   box-sizing: border-box;
   cursor: pointer;
-  
 }
 
 
@@ -42,15 +47,16 @@ header{
   background-color: #f5f5f5;;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 36px;
   width: 100%;
 }
 
 .nav-1 div a{
   display: flex;
-
-
+  font-size: 12px;
 }
+
 .nav-1 img{
   width: 24px;
   height: 24px;
@@ -67,7 +73,7 @@ header{
   padding: 0, 2px,0, 0 ;
 }
 .side-menu .side li a{
-  margin: 0 8px;
+  margin: 0 12px;
 }
 
 .nav-1 .side-menu li::before{
@@ -139,11 +145,18 @@ header .side-search:first-child{
 }
 
 
-
 .welcome-coupon{
   background-color: #f5f5f5;
   height: 44px;
   text-align: center;  
+}
+.welcome-coupon p span{
+  font-size: 12px;
+}
+
+.join{
+  text-decoration: underline;
+  font-size: 12px;
 }
 
 .section-1{
@@ -154,5 +167,8 @@ header .side-search:first-child{
 .section-1 .airmax-dn a img{
   /* position: absolute; */
     margin: 0 auto;
-   
+ }
+ 
+ .section-1 .airmax-dn .airmax-text{
+  text-align: center;
  }
