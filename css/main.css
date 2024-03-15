@@ -12,8 +12,9 @@ body{
 }
 
 .inner{
-  width: 1200px; /* max-width, width기준(?)*/ 
+  width: 1800px; /* max-width, width기준(?)*/ 
   margin: 0 auto;
+  position: relative;
 }
 
 img {
@@ -96,12 +97,14 @@ header{
   width: 58px;
   height: 20px;
   padding:0 0 0 10px;
+  /* LOGO */
 }
 
 .nav-2{
   display: flex;
   justify-content: space-between;
   height: 60px;
+  /* LOGO, main-menu */
 }
 
 .nav-2 .logo{
@@ -118,6 +121,32 @@ header{
   padding: 12px 12px 8px;
 }
 
+
+.nav-2 .main-menu .item .item__contents{
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 2;
+  display: none;
+  /* flex시키기 */
+}
+
+.nav-2 .main-menu .item:hover .item__contents{
+  display: block;
+}
+
+.nav-2 .main-menu .item__contents ul{
+  display: flex;
+  font-size: 14px;
+  
+}
+
+.nav-2 .main-menu .item__contents ul li{
+  display: flex;
+}
+
+
 .side-search{
   position: relative;
   padding: 0 38px 0 0px;
@@ -129,7 +158,7 @@ header{
 
 .side-search input{
   position: absolute;
-  width: 150px;
+  width: 180px;
   padding: 8px;
   display: flex;
   align-items: center;
@@ -137,11 +166,22 @@ header{
   border: none;
   background-color: #f5f5f5;
   right: 38px;
+  top: 20px;
+}
+
+.side-search input:hover{
+  background: #e5e5e5;
+  border: none; /* ?? */
 }
 
 
-header .side-search:first-child{
+header .material-symbols-outlined:first-child{
  position: absolute;
+ background: transparent;
+ z-index: 2;
+ right: 250px;
+ top: 20px;
+ /* 돋보기 */
 }
 
 
@@ -160,15 +200,53 @@ header .side-search:first-child{
 }
 
 .section-1{
+  /* background-color: aqua; */
   position: relative;
   justify-content: center;
   align-items: center;
 }
-.section-1 .airmax-dn a img{
-  /* position: absolute; */
-    margin: 0 auto;
- }
- 
- .section-1 .airmax-dn .airmax-text{
+.section-1 .inner img{
+  /* position: absolute;  */
+  /* absolute가운데정렬(?) */  
+  margin: 0 auto;
+  width: 100%;
+  }
+
+.section-1 .inner .airmax-text{
   text-align: center;
- }
+  padding: 50px;
+}
+
+.section-1 .inner .airmax-text >h1{
+  font-size: 50px;
+  font-weight: 500px;
+  margin-bottom: 8px;
+}
+
+.section-1 .inner .airmax-text >p{
+  margin-top: 24px;
+}
+
+.section-1 .inner .airmax-text >button{
+  margin-top: 24px;
+}
+
+.section-2 .inner a img{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-2 .inner .physical-text{
+  text-align: center;
+  padding: 50px;
+}
+
+.section-2 .inner .physical-text >h1{
+  font-size: 50px;
+  font-weight: 500px;
+  margin-bottom: 8px;
+}
+
+.section-2 .inner .physical-text >button{
+  margin-top: 24px;
+}
