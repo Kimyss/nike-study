@@ -129,23 +129,17 @@ header{
   left: 0;
   z-index: 2;
   display: none;
-  /* flex시키기 */
 }
 
 .nav-2 .main-menu .item:hover .item__contents{
   display: block;
+  /* block이어야 hover되면 컨텐츠나옴(?) */
 }
 
 .nav-2 .main-menu .item__contents ul{
-  display: flex;
+  /* display: flex; */
   font-size: 14px;
-  
 }
-
-.nav-2 .main-menu .item__contents ul li{
-  display: flex;
-}
-
 
 .side-search{
   position: relative;
@@ -249,4 +243,15 @@ header .material-symbols-outlined:first-child{
 
 .section-2 .inner .physical-text >button{
   margin-top: 24px;
+}
+
+.section-3 .inner .spring{
+  display: flex;
+  width: 100%;
+  /* margin: 0 auto; */
+}
+
+.section-3 .inner .spring img{
+  width: calc(100% - 25%);
+  height: 100%;
 }
