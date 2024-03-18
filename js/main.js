@@ -8,3 +8,13 @@ new Swiper('.section-4 .swiper', {
   },
 });
 
+
+new Swiper('.section-5 .swiper', {
+  loop: true, 
+  slidesPerView: 6, 
+  spaceBetween: 10, 
+  navigation: { 
+    nextEl: '.section-5 .swiper-button-next',
+    prevEl: '.section-5 .swiper-button-prev',
+  },
+});
