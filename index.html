@@ -25,13 +25,17 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
+  <script defer src="js/main.js"></script>
+
 </head>
 <body>
   <header>
     <nav class="nav-1">
-      <div>
-        <a href="javascript:void(0)">
+      <div class="jo-con-logo">
+        <a href="javascript:void(0)">   <!-- jordan 페이지로 이동 -->
           <img src="./images/jordan_logo.png" alt="jordan">
+        </a>
+        <a href="javascript:void(0)">   <!-- converse로 이동 -->
           <img src="./images/converse_logo.png" alt="converse">
         </a>
       </div>
@@ -52,11 +56,11 @@
           </li>
         </ul>
       </div>
-    </nav>
+      </nav>
 
-    <!-- nav2 -->
+    <!-- nav2 로고, search태그 div태그사용권장-->
     <nav class="nav-2"> 
-      <a href="javascript:void(0)" class="logo">
+      <a href="./index.html" class="logo">
       <img src="./images/NIKE_Logo.png" alt="nike">
       </a>
     
@@ -200,12 +204,13 @@
         </div>
       </div>
     </div>
+  </section>
 
+  <section class="section-4">
     <div class="swiper-bundle">
       <div class="inner">
         <div class="trending-now">
-          <span>Trending Now</span> 
-          <!-- 글씨겹침(?) -->
+          <h2>Trending Now</h2>
           <div class="swiper-button-prev">
             <span class="material-icons">arrow_back</span>
           </div>
@@ -216,35 +221,81 @@
       
 
       
-      <div class="trending-img">
-        <div class="tr mesh"> 
-          <img src="./images/nike-just-do-it (3).jpg" alt="메쉬">
-          <span>mesh</span>
-        </div>
-        <!-- <div class="tr max90">
-          <img src="./images/nike-just-do-it(33).png" alt="맥스">
-          <span>max 90</span>
-        </div> -->
-        <div class="tr force">
-          <img src="./images/nike-just-do-it (4).jpg" alt="포스">
-          <span>force 1</span>
-        </div>
-        <div class="tr blazer">
-          <img src="./images/nike-just-do-it (5).jpg" alt="blazer">
-          <span>블레이저</span>
-        </div>
-        <div class="tr structure">
-          <img src="./images/nike-just-do-it (6).jpg" alt="structure">
-          <span>스트럭처25</span>
+        <div class="trending-img">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                <img src="./images/nike-just-do-it (3).jpg" alt="메쉬">
+                <span>mesh</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/nike-just-do-it(33).jpg" alt="맥스">
+                <span>max 90</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/nike-just-do-it (4).jpg" alt="포스">
+                <span>force 1</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/nike-just-do-it (5).jpg" alt="blazer">
+                <span>블레이저</span>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/nike-just-do-it (6).jpg" alt="structure">
+                <span>스트럭처25</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </section>
+
+  <section class="section-5">
+    <div class="inner">
+      <h2>Always Iconic</h2>
+      <div class="swiper-bundle2">
+        <a href="javascript:void(0)" class="iconic-img">
+          <img src="./images/nike-just-do-it (7).jpg" alt="">
+        </a>
+        <a href="javascript:void(0)" class="iconic-img">
+          <img src="./images/nike-just-do-it (8).jpg" alt="">
+        </a>
+        <a href="javascript:void(0)" class="iconic-img"> 
+          <img src="./images/nike-just-do-it (9).jpg" alt="">
+        </a>
+        <a href="javascript:void(0)" class="iconic-img">
+          <img src="./images/nike-just-do-it (10).jpg" alt="">
+        </a>
+        <a href="javascript:void(0)" class="iconic-img">
+          <img src="./images/nike-just-do-it (11).jpg" alt="">
+        </a>
+        <a href="javascript:void(0)" class="iconic-img">
+          <img src="./images/nike-just-do-it (12).jpg" alt="">
+        </a>
+        <a href="javascript:void(0)" class="iconic-img">
+          <img src="./images/nike-just-do-it (13).jpg" alt="">
+        </a>
+      </div>
+    
+      <div class="swiper-button-prev">
+        <span class="material-icons">arrow_back</span>
+      </div>
+      <div class="swiper-button-next">
+        <span class="material-icons">arrow_forward</span>
+      </div> 
+    </div>
+  </section>
+
+  <section class="section-6">
+    <div class="you-tube">  <!-- 영상출력요소 -->
+      <div id="player"> <!-- 영상 재생 될요소 -->
+      </div>
     </div>
   </section>
     
-      
-
-
-    
     <div class="site-map"></div>
     <footer class="footer1"></footer>
+    
+</body>
+</html>

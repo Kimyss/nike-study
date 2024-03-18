@@ -7,12 +7,12 @@ a{
 /* 전역변수 설정 */
 body{
   font-family: "Noto Sans KR", sans-serif;
-  /* overflow-x: hidden; */
-  /* line-height: ; */
+  overflow-x: hidden;
+  /* width: 100%; 왜 한번에 설정안됨*/
 }
 
 .inner{
-  width: 1800px; /* max-width, width기준(?)*/ 
+  max-width: 1800px; /* max-width, width기준(?)*/
   margin: 0 auto;
   position: relative;
 }
@@ -37,11 +37,9 @@ img {
 
 
 header{
-  /* background-color: brown; */
   background-color: white;
-  max-width: 100%;
   position: relative;
-  /* padding: 0 38px 0 36px; */
+  padding: 0 38px 0 36px;
 }
 
 .nav-1{
@@ -54,8 +52,12 @@ header{
 }
 
 .nav-1 div a{
-  display: flex;
   font-size: 12px;
+}
+
+.nav-1 .jo-con-logo a{
+  display: flex;
+  /* 조던이랑 컨버스 나란히 */
 }
 
 .nav-1 img{
@@ -71,7 +73,7 @@ header{
 }
 .side-menu .side li {
   display: block;
-  padding: 0, 2px,0, 0 ;
+  padding: 0 2px 0 0 ;
 }
 .side-menu .side li a{
   margin: 0 12px;
@@ -248,6 +250,7 @@ header .material-symbols-outlined:first-child{
 
 .section-2 .qr-code img{
   margin: 0 auto;
+  width: 100%;
 }
 
 .section-3 .inner h1{
@@ -271,8 +274,8 @@ header .material-symbols-outlined:first-child{
   display: block;
 }
 
-.trending-now .swiper-button-prev,
-.trending-now .swiper-button-next{
+.swiper-button-prev,
+.swiper-button-next{
   width: 48px;
   height: 48px;
   background-color: #e5e5e5;
@@ -283,15 +286,10 @@ header .material-symbols-outlined:first-child{
   color: grey;
 }
 
-.trending-now:first-child{
-  margin: 100px 0 50px 0;
-  font-size: 32px;
-}
-
 .trending-now .swiper-button-prev{
-  left: 50%;  
-  margin-left: 780px;
+  left: 80%;
   top: 20px;
+  margin-left: 240px;
 }
 
 .trending-now .swiper-button-next{
@@ -299,33 +297,36 @@ header .material-symbols-outlined:first-child{
   top: 20px;
 }
 
-.trending-now .swiper-button-prev::after,
-.trending-now .swiper-button-next::after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
   display: none;
 }
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: gray;
+  color: white
+  
+}
 
-
-.trending-now tr span{
-  display: block;
+.section-4 .trending-now{
   margin: 100px 0 50px 0;
   font-size: 32px;
 }
 
-.trending-img .tr img{
-  /* width: 100%; */
-}
-
-.trending-img .tr span{
-  margin: 30px 0;
-  display: block;
-}
-
-.trending-img{
+.section-4 .trending-img .swiper-wrapper{
   display: flex;
-  flex-shrink: 0;
+  /* flex-shrink: 0; 각각의 아이템들한테주기 */
 }
 
-.trending-img .max90{
-  width: 593px;
-  height: 534px;
+
+
+
+.section-5 h2{
+  margin: 100px 0 50px 0;
+  font-size: 32px;
 }
+
+.section-5 .swiper-bundle2 {
+  display: flex;
+}
+
