@@ -11,7 +11,7 @@ new Swiper('.section-4 .swiper', {
 
 new Swiper('.section-5 .swiper', {
   loop: true, 
-  slidesPerView: 6, 
+  slidesPerView: 3, 
   spaceBetween: 10, 
   navigation: { 
     nextEl: '.section-5 .swiper-button-next',

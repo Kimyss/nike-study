@@ -27,6 +27,8 @@
 
   <script defer src="js/main.js"></script>
 
+  <script defer src="js/youtube.js"></script>
+
 </head>
 <body>
   <header>
@@ -62,89 +64,91 @@
           </ul>
         </div>
       </div>
-      </nav>
+    </nav>
 
     <!-- nav2 로고, search태그 div태그사용권장-->
-    <nav class="nav-2"> 
-      <a href="./index.html" class="logo">
-      <img src="./images/NIKE_Logo.png" alt="nike">
-      </a>
-    
-      <ul class="main-menu">
-        <li class="item">
-          <a href="javascript:void(0)" class="item__name">New & Featured</a>
-          <div class="item__contents">
-            <ul class="inner">
-              <li>
-                <h4>New & Featured</h4>
-                <ul>
-                  <li>신제품 전체보기</li>
-                  <li>베스트셀러</li>
-                  <li>FIND YOUR MAX</li>
-                </ul>
-              </li>
-              <li>
-                <h4>Collections</h4>
-                <ul>
-                  <li>봄 데일리룩</li>
-                  <li>ACG</li>
-                </ul>
-              </li>
-              <li>
-                <h4>가이드</h4>
-                <ul>
-                  <li>러닝화 가이드</li>
-                  <li>축구화 가이드</li>
-                  <li>농구화 가이드</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="item">
-          <a href="javascript:void(0)" class="item__name">Men</a>
-          <div class="item__contents">
-            <ul class="inner">
-              <li>
-                <h4>New & Featured</h4>
-                <ul>
-                  <li>신제품</li>
-                  <li>베스트셀러</li>
-                </ul>
-              </li>
-              <li>
-                <h4>Collections</h4>
+    <nav class="nav-2">
+      <div class="inner header-nav2">
+        <a href="./index.html" class="logo">
+        <img src="./images/NIKE_Logo.png" alt="nike">
+        </a>
+      
+        <ul class="main-menu">
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">New & Featured</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>
+                  <h4>New & Featured</h4>
                   <ul>
-                <li>봄 데일리룩</li>
-                <li>에어포스 1</li>
-                <li>수영복</li>
+                    <li>신제품 전체보기</li>
+                    <li>베스트셀러</li>
+                    <li>FIND YOUR MAX</li>
                   </ul>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li class="item">
-          <a href="javascript:void(0)" class="item__name">Women</a>
-        </li>
-        <li class="item">
-          <a href="javascript:void(0)" class="item__name">Kids</a>
-        </li>
-        <li class="item">
-          <a href="javascript:void(0)" class="item__name">Sale</a>
-        </li>
-        <li class="item">
-          <a href="javascript:void(0)" class="item__name">Find Your Max</a>
-        </li>
-      </ul>
-    
+                </li>
+                <li>
+                  <h4>Collections</h4>
+                  <ul>
+                    <li>봄 데일리룩</li>
+                    <li>ACG</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>가이드</h4>
+                  <ul>
+                    <li>러닝화 가이드</li>
+                    <li>축구화 가이드</li>
+                    <li>농구화 가이드</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">Men</a>
+            <div class="item__contents">
+              <ul class="inner">
+                <li>
+                  <h4>New & Featured</h4>
+                  <ul>
+                    <li>신제품</li>
+                    <li>베스트셀러</li>
+                  </ul>
+                </li>
+                <li>
+                  <h4>Collections</h4>
+                    <ul>
+                      <li>봄 데일리룩</li>
+                      <li>에어포스 1</li>
+                      <li>수영복</li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">Women</a>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">Kids</a>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">Sale</a>
+          </li>
+          <li class="item">
+            <a href="javascript:void(0)" class="item__name">Find Your Max</a>
+          </li>
+        </ul>
+      
 
-      <div class="side-search">
-        <span class="material-symbols-outlined">search</span>
-        <label for="search">
-          <input type="text" id="search" placeholder="검색">
-        </label>
-        <span class="material-symbols-outlined">favorite</span>
-        <span class="material-symbols-outlined">shopping_bag</span>
+        <div class="side-search">
+          <span class="material-symbols-outlined">search</span>
+          <label for="search">
+            <input type="text" id="search" placeholder="검색">
+          </label>
+          <span class="material-symbols-outlined">favorite</span>
+          <span class="material-symbols-outlined">shopping_bag</span>
+        </div>
       </div>
     </nav>
 
@@ -257,67 +261,191 @@
     </div>
   </section>
 
+  <section class="youtube">
+    <div class="youtube__area"> <!-- 영상출력영역 -->
+      <div id="player"> <!-- 실제 영상요소 -->
+
+      </div>
+    </div>
+  </section>
+
 
 
   <section class="section-5">
-    <div class="swiper">
-      <h2>Always Iconic</h2>
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <a href="javascript:void(0)">
-            <img src="./images/nike-just-do-it (7).jpg" alt="">
-          </a>
+    <div class="inner">
+      <div class="swiper">
+        <h2>Always Iconic</h2>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./images/nike-just-do-it (7).jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./images/nike-just-do-it (8).jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./images/nike-just-do-it (9).jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./images/nike-just-do-it (10).jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./images/nike-just-do-it (11).jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./images/nike-just-do-it (12).jpg" alt="">
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="javascript:void(0)">
+              <img src="./images/nike-just-do-it (13).jpg" alt="">
+            </a>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <a href="javascript:void(0)">
-            <img src="./images/nike-just-do-it (8).jpg" alt="">
-          </a>
+      </div>
+    
+
+      <div class="swiper-bundle2">
+        <div class="swiper-button-prev">
+          <span class="material-icons">arrow_back</span>
         </div>
-        <div class="swiper-slide">
-          <a href="javascript:void(0)">
-            <img src="./images/nike-just-do-it (9).jpg" alt="">
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="javascript:void(0)">
-            <img src="./images/nike-just-do-it (10).jpg" alt="">
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="javascript:void(0)">
-            <img src="./images/nike-just-do-it (11).jpg" alt="">
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="javascript:void(0)">
-            <img src="./images/nike-just-do-it (12).jpg" alt="">
-          </a>
-        </div>
-        <div class="swiper-slide">
-          <a href="javascript:void(0)">
-            <img src="./images/nike-just-do-it (13).jpg" alt="">
-          </a>
+        <div class="swiper-button-next">
+          <span class="material-icons">arrow_forward</span>
         </div>
       </div>
     </div>
-
-    <div class="swiper-bundle2">
-      
-    </div>
   </section>
 
-  
-  
-  
-  <section class="section-6">
-    <div class="you-tube">  <!-- 영상출력요소 -->
-      <div id="player"> <!-- 영상 재생 될요소 -->
+  <div class="site-map">
+    <ul class="inner">
+      <h4>Featured</h4>
+      <div class="product__item">
+        <ul>
+          <li><a href="javascript:void(0)">에어포스1</a></li>
+          <li><a href="javascript:void(0)">조던1</a></li>
+          <li><a href="javascript:void(0)">에어맥스97</a></li>
+          <li><a href="javascript:void(0)">에어맥스90</a></li>
+          <li><a href="javascript:void(0)">블레이저</a></li>
+          <li><a href="javascript:void(0)">리액트</a></li>
+          <li><a href="javascript:void(0)">페가수스</a></li>
+        </ul>
+      </div>
+    </ul>
+    <ul class="inner">
+      <h4>신발</h4>
+      <div class="product__item">
+        <ul>
+          <li><a href="javascript:void(0)">전체보기</a></li>
+          <li><a href="javascript:void(0)">조던신발</a></li>
+          <li><a href="javascript:void(0)">런닝신발</a></li>
+          <li><a href="javascript:void(0)">농구신발</a></li>
+          <li><a href="javascript:void(0)">테니스신발</a></li>
+          <li><a href="javascript:void(0)">트레이닝신발</a></li>
+          <li><a href="javascript:void(0)">Sale신발</a></li>
+        </ul>
+      </div>
+    </ul>
+    <ul class="inner">
+      <h4>의류</h4>
+      <div class="product__item">
+        <ul>
+          <li><a href="javascript:void(0)">전체보기</a></li>
+          <li><a href="javascript:void(0)">탑 & 티셔츠</a></li>
+          <li><a href="javascript:void(0)">쇼츠</a></li>
+          <li><a href="javascript:void(0)">후디 & 풀오버</a></li>
+          <li><a href="javascript:void(0)">조거 & 스웻팬츠</a></li>
+          <li><a href="javascript:void(0)">스포츠브라</a></li>
+          <li><a href="javascript:void(0)">팬츠 & 타이즈</a></li>
+        </ul>
+      </div>
+    </ul>
+    <ul class="inner">
+      <h4>Kids</h4>
+      <div class="product__item">
+        <ul>
+          <li><a href="javascript:void(0)">베이비 신발</a></li>
+          <li><a href="javascript:void(0)">키즈 신발</a></li>
+          <li><a href="javascript:void(0)">키즈 농구 신발</a></li>
+          <li><a href="javascript:void(0)">키즈 러닝 신발</a></li>
+          <li><a href="javascript:void(0)">키즈 조던 신발</a></li>
+          <li><a href="javascript:void(0)">키즈 의류</a></li>
+          <li><a href="javascript:void(0)">키즈 백팩</a></li>
+        </ul>
+      </div>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-0">
+      <div class="footer-1">
+        <div>
+          <a href="javascript:void(0)">멤버가입</a>
+        </div>
+        <div>
+          <a href="javascript:void(0)">매장찾기</a>
+        </div>
+        <div>
+          <a href="javascript:void(0)">나이키 저널</a>
+        </div>
+      </div>
+      <div class="footer-2">
+        <h4>고객센터</h4>
+        <ul>
+          <li>주문배송조회</li>
+          <li>반품 정책</li>
+          <li>결제 방법</li>
+          <li>공지사항</li>
+          <li>문의하기</li>
+        </ul>
+      </div>
+      <div class="footer-3">
+        <h4>회사소개</h4>
+        <ul>
+          <li>About Nike</li>
+          <li>소식</li>
+          <li>채용</li>
+          <li>투자자</li>
+          <li>지속가능성</li>
+        </ul>
+      </div>
+      <div class="footer-4">
+          <img src="./images/KakaoTalk_20240319_123317543.gif" alt="">
+          <img src="./images/KakaoTalk_20240319_123323395.gif" alt="">
+          <img src="./images/KakaoTalk_20240319_123325765.gif" alt="">
+          <img src="./images/KakaoTalk_20240319_123328085.gif" alt="">
       </div>
     </div>
-  </section>
-    
-    <div class="site-map"></div>
-    <footer class="footer1"></footer>
-    
+
+    <div class="info">
+      <div class="info-0">
+        <div class="company-1">
+          <span>대한민국</span>
+          <div>
+            &copy; <!-- <span class="this-year"></span> -->
+            2024 Nike, Inc. All Rights Reserved
+          </div>
+        </div>
+
+        <div class="company-2">
+          <a href="javascript:void(0)">이용약관</a>
+          <a href="javascript:void(0)">개인정보처리방침</a>
+          <a href="javascript:void(0)">위치 기반 서비스 약관</a>
+          <a href="javascript:void(0)">영상정보처리기기 운영 지침</a>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="border-line"></div>
+  </footer>
 </body>
 </html>
