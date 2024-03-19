@@ -10,9 +10,12 @@ new Swiper('.section-4 .swiper', {
 
 
 new Swiper('.section-5 .swiper', {
-  loop: true, 
+  loop: true,
+  autoplay:{
+    delay:5000
+  },
   slidesPerView: 3, 
-  spaceBetween: 10, 
+  spaceBetween: 10,
   navigation: { 
     nextEl: '.section-5 .swiper-button-next',
     prevEl: '.section-5 .swiper-button-prev',
