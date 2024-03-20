@@ -199,6 +199,7 @@ header{
 header .material-symbols-outlined:first-child{
  position: absolute;
  right: 270px;
+ bottom: 3px;
  /* 돋보기 선택자*/
 }
 
@@ -439,8 +440,7 @@ header .material-symbols-outlined:first-child{
 }
 
 .footer{
-  height: 412px;
-  background-color: black;
+  background-color: #111111;
   padding: 35px;
 }
 
@@ -502,8 +502,6 @@ header .material-symbols-outlined:first-child{
   display: flex;
 }
 
-
-
 .info .company-1 span{
   color: #fff;
 }
@@ -521,6 +519,24 @@ header .material-symbols-outlined:first-child{
   margin-left: 20px;
 }
 
+.address{
+  max-width: 1903px;
+  color: #7e7e7e;
+  font-size: 11px;
+  padding: 10px;
+}
+
+.address >.address-all{
+  display: flex;
+  justify-content: space-between;
+  line-height: 15px;
+}
+
+.address >.address-all span{
+  cursor: pointer;
+  color: #ccc;
+  text-decoration: underline;
+}
 
 #to-top{
   width: 42px;
@@ -552,9 +568,12 @@ header .material-symbols-outlined:first-child{
   }
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1023px) {
   .nav-2 .main-menu li:nth-child(4){
     display: none;
+  }
+  .footer .footer-4{
+    opacity: 0;
   }
 }
 
@@ -564,7 +583,7 @@ header .material-symbols-outlined:first-child{
   }
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:767px) {
   .nav-1{
     display: none;
   }
@@ -592,5 +611,14 @@ header .material-symbols-outlined:first-child{
   }
   .media-menu div span{
     margin-left: 5px;
+  }
+ 
+  .footer .footer-0{
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .footer .info-0{
+    font-size: 11px;
+    white-space: nowrap;
   }
 }
