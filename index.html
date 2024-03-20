@@ -4,6 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NIKE_</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Nike" />
+  <meta property="og:title" content="Nike Korea" />
+  <meta property="og:description" content="나이키 코리아" />
+  <meta property="og:image" content="./images/starbucks_seo.jpg" />
+  <meta property="og:url" content="https://nike.co.kr" />
+
+
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="Nike" />
+  <meta property="twitter:title" content="Nike Korea" />
+  <meta property="twitter:description" content="나이키 코리아" />
+  <meta property="twitter:image" content="./images/starbucks_seo.jpg" />
+  <meta property="twitter:url" content="https://starbucks.co.kr" />
+
+
   <link rel="icon" href="./images/nike_logologo.png">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css">
@@ -24,6 +41,10 @@
   <link rel="stylesheet" href="./css/main.css">
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js" integrity="sha512-1PKqXBz2ju2JcAerHKL0ldg0PT/1vr3LghYAtc59+9xy8e19QEtaNUyt1gprouyWnpOPqNJjL4gXMRMEpHYyLQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <script defer src="js/main.js"></script>
 
@@ -210,6 +231,19 @@
       </div>
     </nav>
 
+    <div class="media-menu">
+      <div>
+        <a href="./index.html" class="logo">
+        <img src="./images/NIKE_Logo.png" alt="nike">
+      </div>
+      <div>
+        <span class="material-icons">search</span> 
+        <!-- 아이콘 중복사용, 효과지정X(?) -->
+        <span class="material-symbols-outlined">favorite</span>
+        <span class="material-symbols-outlined">shopping_bag</span>
+      </div>
+    </div>
+
     <div class="welcome-coupon">
       <p>
         웰컴쿠폰: 앱 첫 구매 15%할인 혜택
@@ -220,8 +254,8 @@
 
   <section class="section-1">
     <div class="inner">
-        <img src="./images/nike-just-do-it---.jfif" alt="airmax-dn">
-        <div class="airmax-text">
+        <img src="./images/nike-just-do-it---.jfif" alt="airmax-dn" class="fade-in">
+        <div class="airmax-text fade-in">
           <span>나이키 에어맥스Dn</span>
           <h1>FEEL THE UNREAL</h1> <!-- <h1> 왜?  -->
           <p>3월 26일, 새로운 에어의 시대가 시작됩니다.<br>
@@ -255,20 +289,28 @@
       <h1>봄 추천 제품</h1>
       <div class="spring">
         <div class="sp windrunner">
-          <img src="./images/스포츠웨어-윈드러너-남성-후드-재킷-WlocikQM.jfif" alt="바람막이">
-          <span>바람막이</span>
+          <a href="javascript:void(0)">
+            <img src="./images/스포츠웨어-윈드러너-남성-후드-재킷-WlocikQM.jfif" alt="바람막이">
+            <span>바람막이</span>
+          </a>
         </div>
         <div class="sp Hood">
-          <img src="./images/클럽-언스트럭처드-퓨추라-워시-캡-Iyo0vpLR.jfif" alt="후드">
-          <span>후드 & 맨투맨</span>
+          <a href="javascript:void(0)">
+            <img src="./images/클럽-언스트럭처드-퓨추라-워시-캡-Iyo0vpLR.jfif" alt="후드">
+            <span>후드 & 맨투맨</span>
+          </a>
         </div>
         <div class="sp sneakers">
-          <img src="./images/클럽-남성-코치-재킷-K2qckdnw.jfif" alt="재킷">
-          <span>재킷</span>
+          <a href="javascript:void(0)">
+            <img src="./images/클럽-남성-코치-재킷-K2qckdnw.jfif" alt="재킷">
+            <span>재킷</span>
+          </a>
         </div>
         <div class="sp pants">
-          <img src="./images/acg-남성-uv-하이킹-팬츠-cflbi5MW.jfif" alt="팬츠">
-          <span>팬츠</span>
+          <a href="javascript:void(0)">
+            <img src="./images/acg-남성-uv-하이킹-팬츠-cflbi5MW.jfif" alt="팬츠">
+            <span>팬츠</span>
+          </a>
         </div>
       </div>
     </div>
@@ -324,9 +366,15 @@
       <div id="player"></div>
     </div>
     <div class="youtube__cover"></div>
-</section>
 
-
+    <div class="youtube__text">
+      <span>나이키 블레이저 미드 '77 빈티지</span>
+      <h1>어떤 룩이든 클래식하게</h1> 
+      <p>농구화 헤리티지 기반의 클래식한 실루엣의 나이키 블레이저 미드 77 빈티지를 만나보세요.<br>
+        매일 신을 수 있는 깔끔하고 산뜻한 디자인으로 다양한 스타일을 완성할 수 있습니다.</p>     
+      <button type="button" class="btn">구매하기</button>
+      </div>
+  </section>
 
   <section class="section-5">
     <div class="inner">
@@ -490,8 +538,8 @@
         <div class="company-1">
           <span>대한민국</span>
           <div>
-            &copy; <!-- <span class="this-year"></span> -->
-            2024 Nike, Inc. All Rights Reserved
+            &copy; <span class="this-year"></span>
+            Nike, Inc. All Rights Reserved
           </div>
         </div>
 
@@ -506,5 +554,10 @@
  
     <div class="border-line"></div>
   </footer>
+
+  <div id="to-top">
+      <span class="material-icons">arrow_upward</span>
+    </a>
+  </div>
 </body>
 </html>
